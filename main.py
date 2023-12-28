@@ -114,7 +114,7 @@ def spendingLimitList(lContactData):
         lSpendingLimit[", ".join([contact[0], contact[1]])] = [contact[14]]
     return lSpendingLimit
 
-# function to create message with list of users with spending limit authorization
+# function to create message with list of users with spending limit authorization and the amount they are authorized to spend
 def spendingLimit(lContactTypes):
   message = ""
   spendingLimit = []
