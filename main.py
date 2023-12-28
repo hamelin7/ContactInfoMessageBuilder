@@ -148,36 +148,36 @@ def secureUsers(lContactTypes):
 # function to create message with list of primary POC types.
 def pocTypes(lContactTypes):
     message = ""
-    ppoc1 = None
-    ppoc2 = None
-    ppoc3 = None
-    epoc1 = None
-    epoc2 = None
-    epoc3 = None
-    fpoc = None
+    ppoc1 = ""
+    ppoc2 = ""
+    ppoc3 = ""
+    epoc1 = ""
+    epoc2 = ""
+    epoc3 = ""
+    fpoc = ""
     cpoc = []
     decisionMakers = []
 
     for key, value in lContactTypes.items():
-        if "PPOC1" in value[0] and ppoc1 is None:
+        if "PPOC1" in value[0] and ppoc1 == "":
             name = " ".join(key)
             ppoc1 = f"Who is our primary point of contact? {name}\n"
-        if "PPOC2" in value[0] and ppoc2 is None:
+        if "PPOC2" in value[0] and ppoc2 == "":
             name = " ".join(key)
-            ppoc2 = f"If that person isn’t available, who should we consider our secondary point of contact? {name}\n"
-        if "PPOC3" in value[0] and ppoc3 is None:
+            ppoc2 = f"If that person isn't available, who should we consider our secondary point of contact? {name}\n"
+        if "PPOC3" in value[0] and ppoc3 == "":
             name = " ".join(key)
-            ppoc3 = f"If that person isn’t available, who should we consider our third point of contact? {name}\n"
-        if "EPOC1" in value[0] and epoc1 is None:
+            ppoc3 = f"If that person isn't available, who should we consider our third point of contact? {name}\n"
+        if "EPOC1" in value[0] and epoc1 == "":
             name = " ".join(key)
             epoc1 = f"If there is an issue after-hours, who should we contact? {name}\n"
-        if "EPOC2" in value[0] and epoc2 is None:
+        if "EPOC2" in value[0] and epoc2 == "":
             name = " ".join(key)
-            epoc2 = f"If that person isn’t available, who should we consider our secondary after-hours point of contact? {name}\n"
-        if "EPOC3" in value[0] and epoc3 is None:
+            epoc2 = f"If that person isn't available, who should we consider our secondary after-hours point of contact? {name}\n"
+        if "EPOC3" in value[0] and epoc3 == "":
             name = " ".join(key)
-            epoc3 = f"If that person isn’t available, who should we consider our third after-hours point of contact?  {name}\n"
-        if "FPOC" in value[0] and fpoc is None:
+            epoc3 = f"If that person isn't available, who should we consider our third after-hours point of contact?  {name}\n"
+        if "FPOC" in value[0] and fpoc == "":
             name = " ".join(key)
             fpoc = f"Who should we consider to be our Accounts Payable point of contact? {name}\n"
         if "CPOC" in value[0]:
