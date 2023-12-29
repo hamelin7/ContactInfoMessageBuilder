@@ -8,4 +8,4 @@ Export contacts from Connectwise Manage by following these steps:
                 Contacts > 
                       Export => This will export a file called contactlist.csv. 
 
-The Type field to hold descriptive tags for specific contacs. There are also additional custom fields per contact that also have custom value choices. The order of and specific fields used will likely be different in your environment.
+The Type field holds descriptive tags for specific contacs. There are also additional custom fields per contact that also have custom value choices. The order of and specific fields used will likely be different in your environment.
