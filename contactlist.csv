@@ -1,0 +1,31 @@
+﻿First Name,Last Name,Status,Phone Number,Ext,Title,Relationship,Type,Email,Last Login,Portal Login,Portal Security Level,Billing Contact,Site,Spending Limit,Remote Support Auth,Onsite Support Auth,Emerg & AH Support Auth,Security Auth,Non-Standard Auth
+first1,last1,Active,,,,,End User,,,Inactive,,FALSE,,Company Default,Yes,No,No,No,No
+first2,last2,Active,,,,,,,,Inactive,User,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
+first3,last3,Active,,,,,,,,Inactive,User,FALSE,,,,,,,
+first4,last4,Active,,,,,"End User, PPOC2, EPOC2, NPS Recipient , Admin Portal",,,Inactive,,FALSE,,Company Default,Yes,Yes,Yes,No,Not Set
+first5,last5,Active,,,,,End User,,,Inactive,User,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
+first6,last6,Inactive,,,,,,,,Inactive,User,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
+first7,last7,Inactive,,,,,,,,Inactive,User,FALSE,,,,,,,
+first8,last8,Inactive,,,,,,,,Inactive,User,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
+first9,last9,Active,,,,,End User,,,Inactive,User,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
+first10,last10,Active,,,,,End User,,,Inactive,User,FALSE,,,,,,,
+first11,last11,Active,,,,,End User,,,Inactive,User,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
+first12,last12,Active,,,,,End User,,,Inactive,User,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
+first13,last13,Active,,,,,End User,,,Inactive,,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
+first14,last14,Active,,,,,End User,,,Inactive,User,FALSE,,,,,,,
+first15,last15,Active,,,,,End User,,,Inactive,User,FALSE,,,,,,,
+first16,last16,Active,,,,,"End User, EPOC3, PPOC3, FPOC",,,Inactive,,FALSE,,No Limit,Yes,Yes,Yes,No,Not Set
+first17,last17,Inactive,,,,,,,,Inactive,User,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
+first18,last18,Active,,,,,End User,,,Inactive,User,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
+first19,last19,Active,,,,,End User,,,Inactive,User,FALSE,,,,,,,
+first20,last20,Active,,,,,"End User, Decision Maker, Owner, CPOC",,,Inactive,,FALSE,,No Limit,Yes,Yes,Yes,Yes - All Users,Yes
+first21,last21,Active,,,,,End User,,,Inactive,User,FALSE,,,,,,,
+first22,last22,Inactive,,,,,,,,Inactive,User,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
+first23,last23,Active,,,,,End User,,,Inactive,User,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
+first24,last24,Active,,,,,,,,Inactive,User,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
+first25,last25,Active,,,,,,,,Inactive,,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
+first26,last26,Active,,,,,End User,,,Inactive,,FALSE,,Company Default,No,No,No,No,No
+first27,last27,Active,,,,,End User,,,Inactive,User,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
+first28,last28,Active,,,,,End User,,,Inactive,User,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
+first29,last29,Active,,,,,"PPOC1, Decision Maker, EPOC1, CPOC, CEO/President, NPS Recipient , End User, Admin Portal Super",,,Inactive,,TRUE,,No Limit,Yes,Yes,Yes,Yes - All Users,Yes
+first30,last30,Active,,,,,End User,,,Inactive,User,FALSE,,Company Default,Not Set,Not Set,Not Set,No,Not Set
