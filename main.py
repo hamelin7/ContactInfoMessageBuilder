@@ -12,141 +12,141 @@ def getDataInput():
 
 # function to create dictionary of specific contact types
 def contactTypeList(lContactData):
-    lContactTypes = {}
+    dContactTypes = {}
     for contact in lContactData:
-        lContactTypes[contact[0], contact[1]] = [contact[7], contact[14], contact[15], contact[16], contact[17], contact[18], contact[19]]
-    return lContactTypes
+        dContactTypes[contact[0], contact[1]] = [contact[7], contact[14], contact[15], contact[16], contact[17], contact[18], contact[19]]
+    return dContactTypes
 
 # function to create dictionary of users with remote support authorization
 def remoteAuthList(lContactData):
-    lRemoteAuth = {}
+    dRemoteAuth = {}
     for contact in lContactData:
-        lRemoteAuth[contact[0], contact[1]] = [contact[15]]
-    return lRemoteAuth
+        dRemoteAuth[contact[0], contact[1]] = [contact[15]]
+    return dRemoteAuth
 
 # function to create message with list of users with remote support authorization
-def remoteAuth(lRemoteAuth):
+def remoteAuth(dRemoteAuth):
     message = ""
-    remoteSupport = []
+    lRemoteSupport = []
 
-    for key, value in lRemoteAuth.items():
+    for key, value in dRemoteAuth.items():
         if "Yes" in value[0]:
-            remoteSupport.append(" ".join(key))
-            message = f"Are there any employees who are not authorized to request remote support? {', '.join(remoteSupport)}"
+            lRemoteSupport.append(" ".join(key))
+            message = f"Are there any employees who are not authorized to request remote support? {', '.join(lRemoteSupport)}"
     print(message)
 
 # function to create dictionary of users with onsite support authorization
-def onsiteAuthList(lContactData):
-    lOnsiteAuth = {}
-    for contact in lContactData:
-        lOnsiteAuth[contact[0], contact[1]] = [contact[16]]
-    return lOnsiteAuth
+def onsiteAuthList(dContactData):
+    dOnsiteAuth = {}
+    for contact in dContactData:
+        dOnsiteAuth[contact[0], contact[1]] = [contact[16]]
+    return dOnsiteAuth
 
 # function to create message with list of users with onsite support authorization
-def onsiteAuth(lContactTypes):
+def onsiteAuth(dContactTypes):
     message = ""
-    onsiteSupport = []
+    lOnsiteSupport = []
 
-    for key, value in lContactTypes.items():
+    for key, value in dContactTypes.items():
         if "Yes" in value[0]:
-            onsiteSupport.append(" ".join(key))
-            message = f"Are there any employees who are not authorized to request onsite support? {', '.join(onsiteSupport)}"
+            lOnsiteSupport.append(" ".join(key))
+            message = f"Are there any employees who are not authorized to request onsite support? {', '.join(lOnsiteSupport)}"
     print(message)
 
 # function to create dictionary of users with emergency support authorization
-def emergencyAuthList(lContactData):
-    lEmergencyAuth = {}
-    for contact in lContactData:
-        lEmergencyAuth[contact[0], contact[1]] = [contact[17]]
-    return lEmergencyAuth
+def emergencyAuthList(dContactData):
+    dEmergencyAuth = {}
+    for contact in dContactData:
+        dEmergencyAuth[contact[0], contact[1]] = [contact[17]]
+    return dEmergencyAuth
 
 # function to create message with list of users with emergency support authorization
-def emergencyAuth(lContactTypes):
+def emergencyAuth(dContactTypes):
     message = ""
-    emergencySupport = []
+    lEmergencySupport = []
 
-    for key, value in lContactTypes.items():
+    for key, value in dContactTypes.items():
         if "Yes" in value[0]:
-            emergencySupport.append(" ".join(key))
-            message = f"Are there any employees who are not authorized to request emergency support? {', '.join(emergencySupport)}"
+            lEmergencySupport.append(" ".join(key))
+            message = f"Are there any employees who are not authorized to request emergency support? {', '.join(lEmergencySupport)}"
     print(message)
 
 # function to create dictionary of users with non-included support authorization
-def nonIncludedAuthList(lContactData):
-    lNonIncludedAuth = {}
-    for contact in lContactData:
-        lNonIncludedAuth[contact[0], contact[1]] = [contact[19]]
-    return lNonIncludedAuth
+def nonIncludedAuthList(dContactData):
+    dNonIncludedAuth = {}
+    for contact in dContactData:
+        dNonIncludedAuth[contact[0], contact[1]] = [contact[19]]
+    return dNonIncludedAuth
 
 # function to create message with list of users with non-included support authorization
-def nonIncludedAuth(lContactTypes):
+def nonIncludedAuth(dContactTypes):
     message = ""
-    nonIncludedSupport = []
+    lNonIncludedSupport = []
 
-    for key, value in lContactTypes.items():
+    for key, value in dContactTypes.items():
         if "Yes" in value[0]:
-            nonIncludedSupport.append(" ".join(key))
-            message = f"Are there any employees who are not authorized to request 'non-included' services? {', '.join(nonIncludedSupport)}"
+            lNonIncludedSupport.append(" ".join(key))
+            message = f"Are there any employees who are not authorized to request 'non-included' services? {', '.join(lNonIncludedSupport)}"
     print(message)
 
 #  function to create dictionary of users with security support authorization
-def securityAuthList(lContactData):
-    lSecurityAuth = {}
-    for contact in lContactData:
-        lSecurityAuth[contact[0], contact[1]] = [contact[18]]
-    return lSecurityAuth
+def securityAuthList(dContactData):
+    dSecurityAuth = {}
+    for contact in dContactData:
+        dSecurityAuth[contact[0], contact[1]] = [contact[18]]
+    return dSecurityAuth
 
 # function to create message with list of users with security support authorization
-def securityAuth(lContactTypes):
+def securityAuth(dContactTypes):
     message = ""
-    securitySupport = []
+    lSecuritySupport = []
 
-    for key, value in lContactTypes.items():
+    for key, value in dContactTypes.items():
         if "Yes - All Users" in value[0] or "Yes - Except Secure Users" in value[0]:
-            securitySupport.append(" ".join(key))
-            message = f"Who is authorized to request Paragus change permissions on folders, grant access to another user's data, or grant access to another user's email? {', '.join(securitySupport)}"
+            lSecuritySupport.append(" ".join(key))
+            message = f"Who is authorized to request Paragus change permissions on folders, grant access to another user's data, or grant access to another user's email? {', '.join(lSecuritySupport)}"
     print(message)
 
 # function to create dictionary of users with spending limit authorization
-def spendingLimitList(lContactData):
-    lSpendingLimit = {}
-    for contact in lContactData:
-        lSpendingLimit[", ".join([contact[0], contact[1]])] = [contact[14]]
-    return lSpendingLimit
+def spendingLimitList(dContactData):
+    dSpendingLimit = {}
+    for contact in dContactData:
+        dSpendingLimit[", ".join([contact[0], contact[1]])] = [contact[14]]
+    return dSpendingLimit
 
 # function to create message with list of users with spending limit authorization and the amount they are authorized to spend
-def spendingLimit(lContactTypes):
+def spendingLimit(dContactTypes):
   message = ""
-  spendingLimit = []
+  lSpendingLimit = []
 
-  for key, value in lContactTypes.items():
+  for key, value in dContactTypes.items():
     if "$250" in value[0] or "$500" in value[0] or "$1000" in value[0] or "$1500" in value[0] or "$2500" in value[0] or "$5000" in value[0] or "$10000" in value[0] or "$25000" in value[0] or "$50000" in value[0] or "No Limit" in value[0]:
-      spendingLimit.append(f"{key}: {value[0]}")
-  message = f"Who is authorized to spend more than the company default spending limit? {', '.join(spendingLimit)}"
+      lSpendingLimit.append(f"{key}: {value[0]}")
+  message = f"Who is authorized to spend more than the company default spending limit? {', '.join(lSpendingLimit)}"
   print(message)
 
 # function to create dictionary of users with secure users authorization
-def secureUsersList(lContactData):
-    lSecureUsers = {}
-    for contact in lContactData:
-        lSecureUsers[contact[0], contact[1]] = [contact[18]]
-    return lSecureUsers
+def secureUsersList(dContactData):
+    dSecureUsers = {}
+    for contact in dContactData:
+        dSecureUsers[contact[0], contact[1]] = [contact[18]]
+    return dSecureUsers
 
 # function to create message with list of users with secure users authorization
-def secureUsers(lContactTypes):
+def secureUsers(dContactTypes):
     message = ""
-    secureUsers = []
+    lSecureUsers = []
 
-    for key, value in lContactTypes.items():
+    for key, value in dContactTypes.items():
         if "Yes - Except Secure Users" in value[0]:
-            secureUsers.append(" ".join(key))
-            message = f"Are there any users whose data they are not authorized to request access to (i.e. owner, CFO, HR)? Yes{', '.join(secureUsers)}"
+            lSecureUsers.append(" ".join(key))
+            message = f"Are there any users whose data they are not authorized to request access to (i.e. owner, CFO, HR)? Yes{', '.join(lSecureUsers)}"
         elif "Yes - All Users" in value[0]:
             message = "Are there any users whose data they are not authorized to request access to (i.e. owner, CFO, HR)? No"
     print(message)
 
 # function to create message with list of primary POC types.
-def pocTypes(lContactTypes):
+def pocTypes(dContactTypes):
     message = ""
     ppoc1 = ""
     ppoc2 = ""
@@ -158,7 +158,7 @@ def pocTypes(lContactTypes):
     cpoc = []
     decisionMakers = []
 
-    for key, value in lContactTypes.items():
+    for key, value in dContactTypes.items():
         if "PPOC1" in value[0] and ppoc1 == "":
             name = " ".join(key)
             ppoc1 = f"Who is our primary point of contact? {name}\n"
