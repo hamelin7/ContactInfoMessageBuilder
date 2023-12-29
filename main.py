@@ -1,5 +1,6 @@
+# import csv for reading csv files
 import csv
-# import pandas as pd
+
 def getDataInput():
     lContactData = []
 
